@@ -1,0 +1,563 @@
+[
+    {
+        "id": "doc_budget_01",
+        "type": "document",
+        "title": "Leaked Budget Memo",
+        "text": "Project Zeta — $5M unaccounted. Signed Mayor Svensson. No department claims it.",
+        "credibility": 9,
+        "nodeType": "evidence",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 5,
+                "heatChange": 15,
+                "addsNode": "MISSING_FUNDS"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -10,
+                "heatChange": 0
+            },
+            "down": {
+                "credibilityChange": -5,
+                "heatChange": -10
+            }
+        }
+    },
+    {
+        "id": "wit_secretary_01",
+        "type": "witness",
+        "title": "Mayor's Secretary",
+        "npcId": "city_secretary",
+        "text": "He locks himself in the office every evening. I hear giggling. Three kinds of giggling.",
+        "credibility": 7,
+        "nodeType": "person",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 0,
+                "heatChange": 8,
+                "addsNode": "MAYOR"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -10,
+                "heatChange": 0
+            },
+            "down": {
+                "credibilityChange": -5,
+                "heatChange": -4
+            }
+        }
+    },
+    {
+        "id": "wit_janitor_02",
+        "type": "witness",
+        "title": "Karl the Janitor",
+        "npcId": "karl_janitor",
+        "text": "Found three pairs of tiny shoes under the mayoral desk. Size 2. Kid's size.",
+        "credibility": 6,
+        "nodeType": "evidence",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 0,
+                "heatChange": 6,
+                "addsNode": "KIDS"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -10,
+                "heatChange": 0
+            },
+            "down": {
+                "credibilityChange": -5,
+                "heatChange": -4
+            }
+        }
+    },
+    {
+        "id": "photo_coat_01",
+        "type": "photo",
+        "title": "CCTV Still — City Hall Lobby",
+        "text": "Grainy image. Two legs visible below oversized trench coat. Coat is moving... differently than a person moves.",
+        "credibility": 4,
+        "nodeType": "evidence",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 0,
+                "heatChange": 4,
+                "addsNode": "TRENCH_COAT"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -5,
+                "heatChange": 0,
+                "addsNode": "FAKE_PHOTO"
+            },
+            "down": {
+                "credibilityChange": -2,
+                "heatChange": -2
+            }
+        }
+    },
+    {
+        "id": "doc_candy_invoice",
+        "type": "document",
+        "title": "Procurement Invoice",
+        "text": "City Hall: 48 bags Haribo Gold-Bears, 24 Fruit Roll-Ups, 12 Pop Rocks. Monthly. Expensed to 'Office Supplies'.",
+        "credibility": 8,
+        "nodeType": "evidence",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 3,
+                "heatChange": 10,
+                "addsNode": "CANDY"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -10,
+                "heatChange": 0
+            },
+            "down": {
+                "credibilityChange": -5,
+                "heatChange": -8
+            }
+        }
+    },
+    {
+        "id": "wit_vendor_01",
+        "type": "witness",
+        "title": "Candy Store Owner",
+        "npcId": "candy_vendor",
+        "text": "The mayor's aide comes in every Friday. Always buys the same thing: three identical orders. Paid in cash.",
+        "credibility": 5,
+        "nodeType": "evidence",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 0,
+                "heatChange": 5,
+                "addsNode": "CANDY"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -10,
+                "heatChange": 0
+            },
+            "down": {
+                "credibilityChange": -5,
+                "heatChange": -3
+            }
+        }
+    },
+    {
+        "id": "doc_height_record",
+        "type": "document",
+        "title": "Driver's License on File",
+        "text": "Mayor Svensson: listed height 6'1\". Security footage measurement: 4'11\" plus hat.",
+        "credibility": 8,
+        "nodeType": "evidence",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 4,
+                "heatChange": 12,
+                "addsNode": "KIDS"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -10,
+                "heatChange": 0
+            },
+            "down": {
+                "credibilityChange": -5,
+                "heatChange": -9
+            }
+        }
+    },
+    {
+        "id": "wit_cop_01",
+        "type": "witness",
+        "title": "Off-Duty Officer",
+        "npcId": "officer_brent",
+        "text": "I saw the mayor trip on the stairs. Three separate yelps. One from above the coat. Two from inside.",
+        "credibility": 7,
+        "nodeType": "evidence",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 0,
+                "heatChange": 9,
+                "addsNode": "KIDS"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -10,
+                "heatChange": 0
+            },
+            "down": {
+                "credibilityChange": -5,
+                "heatChange": -4
+            }
+        }
+    },
+    {
+        "id": "photo_lights_02",
+        "type": "photo",
+        "title": "Night-Vision Photo",
+        "text": "Submitted by anonymous tipster. Three small silhouettes visible at mayor's office window, 2:58 AM.",
+        "credibility": 4,
+        "nodeType": "event",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 0,
+                "heatChange": 5,
+                "addsNode": "LATE_LIGHTS"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -5,
+                "heatChange": 0,
+                "addsNode": "FAKE_PHOTO"
+            },
+            "down": {
+                "credibilityChange": -2,
+                "heatChange": -2
+            }
+        }
+    },
+    {
+        "id": "wit_teacher_01",
+        "type": "witness",
+        "title": "Local School Teacher",
+        "npcId": "teacher_margit",
+        "text": "Three kids from my class missed the entire school year. Parents claimed 'family business.' They were always eating candy.",
+        "credibility": 5,
+        "nodeType": "motive",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 0,
+                "heatChange": 7,
+                "addsNode": "KIDS"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -10,
+                "heatChange": 0
+            },
+            "down": {
+                "credibilityChange": -5,
+                "heatChange": -3
+            }
+        }
+    },
+    {
+        "id": "doc_zoning_approval",
+        "type": "document",
+        "title": "Zoning Decision — Redacted",
+        "text": "$5M rezoning approval signed at 2:47 AM. Signature does not match the mayor's known handwriting. It says 'Kevin'.",
+        "credibility": 9,
+        "nodeType": "evidence",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 5,
+                "heatChange": 14,
+                "addsNode": "MISSING_FUNDS"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -10,
+                "heatChange": 0
+            },
+            "down": {
+                "credibilityChange": -5,
+                "heatChange": -11
+            }
+        }
+    },
+    {
+        "id": "wit_guard_01",
+        "type": "witness",
+        "title": "Night Security Guard",
+        "npcId": "guard_pelle",
+        "text": "Every night around 3 AM I hear what sounds like a disagreement about Pokemon. Coming from the mayor's office.",
+        "credibility": 6,
+        "nodeType": "event",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 0,
+                "heatChange": 6,
+                "addsNode": "LATE_LIGHTS"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -10,
+                "heatChange": 0
+            },
+            "down": {
+                "credibilityChange": -5,
+                "heatChange": -3
+            }
+        }
+    },
+    {
+        "id": "doc_coat_receipt",
+        "type": "document",
+        "title": "Nordstrom Receipt — City Card",
+        "text": "'1× Adult Long Trench Coat, extra wide. 1× Internal Child Harness System (custom).' $847. City expense account.",
+        "credibility": 10,
+        "nodeType": "evidence",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 6,
+                "heatChange": 18,
+                "addsNode": "TRENCH_COAT"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -10,
+                "heatChange": 0
+            },
+            "down": {
+                "credibilityChange": -5,
+                "heatChange": -12
+            }
+        }
+    },
+    {
+        "id": "wit_rival_01",
+        "type": "witness",
+        "title": "Rival Reporter",
+        "npcId": "rival_annika",
+        "text": "I've been following this story for months. It's just budget mismanagement. Nothing more. Please stop. You're embarrassing us both.",
+        "credibility": 4,
+        "nodeType": "evidence",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 0,
+                "heatChange": 3,
+                "addsNode": "RIVAL_THEORY"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -10,
+                "heatChange": 0
+            },
+            "down": {
+                "credibilityChange": -5,
+                "heatChange": -2
+            }
+        }
+    },
+    {
+        "id": "event_raid_01",
+        "type": "event",
+        "title": "POLICE KNOCK",
+        "text": "Two officers at your office door. 'Just a friendly chat.' Your editor is watching.",
+        "credibility": 0,
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 0,
+                "heatChange": -15
+            },
+            "left": {
+                "credibilityChange": -5,
+                "heatChange": 20
+            }
+        }
+    },
+    {
+        "id": "wit_accountant_01",
+        "type": "witness",
+        "title": "City Accountant",
+        "npcId": "accountant_lars",
+        "text": "The $5M was earmarked for infrastructure. It moved to a shell account called 'KTB Holdings'. I have no idea what that stands for.",
+        "credibility": 8,
+        "nodeType": "evidence",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 3,
+                "heatChange": 12,
+                "addsNode": "MISSING_FUNDS"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -10,
+                "heatChange": 0
+            },
+            "down": {
+                "credibilityChange": -5,
+                "heatChange": -10
+            }
+        }
+    },
+    {
+        "id": "photo_trench_02",
+        "type": "photo",
+        "title": "Blurry Mall Photo",
+        "text": "Three bumps visible under coat as 'Mayor' exits Build-a-Bear. Very suspicious. Slightly adorable.",
+        "credibility": 3,
+        "nodeType": "evidence",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 0,
+                "heatChange": 4,
+                "addsNode": "TRENCH_COAT"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -5,
+                "heatChange": 0,
+                "addsNode": "FAKE_PHOTO"
+            },
+            "down": {
+                "credibilityChange": -2,
+                "heatChange": -1
+            }
+        }
+    },
+    {
+        "id": "doc_old_invoice",
+        "type": "document",
+        "title": "2019 Contractor Invoice",
+        "text": "Routine HVAC maintenance. $4,800. Filed by previous administration. Unrelated to current investigation.",
+        "credibility": 2,
+        "nodeType": "evidence",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 0,
+                "heatChange": 2,
+                "addsNode": "OLD_INVOICE"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -10,
+                "heatChange": 0
+            },
+            "down": {
+                "credibilityChange": -5,
+                "heatChange": -1
+            }
+        }
+    },
+    {
+        "id": "wit_mayor_self",
+        "type": "witness",
+        "title": "Mayor Svensson",
+        "npcId": "mayor_svensson",
+        "text": "I am a normal human adult man. I enjoy grown-up activities like golf. I do not require a step-stool to reach the podium microphone. Good day.",
+        "credibility": 2,
+        "nodeType": "person",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 0,
+                "heatChange": 20,
+                "addsNode": "MAYOR"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -10,
+                "heatChange": 0
+            },
+            "down": {
+                "credibilityChange": -5,
+                "heatChange": -1
+            }
+        }
+    },
+    {
+        "id": "wit_neighbor_01",
+        "type": "witness",
+        "title": "Mayor's Neighbor",
+        "npcId": "neighbor_birgitta",
+        "text": "The lights in his study are on until 4 AM every night. I can hear him counting. Always counts to three.",
+        "credibility": 5,
+        "nodeType": "event",
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 0,
+                "heatChange": 6,
+                "addsNode": "LATE_LIGHTS"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            },
+            "up": {
+                "credibilityChange": -10,
+                "heatChange": 0
+            },
+            "down": {
+                "credibilityChange": -5,
+                "heatChange": -3
+            }
+        }
+    },
+    {
+        "id": "event_tip_01",
+        "type": "event",
+        "title": "ANONYMOUS TIP",
+        "text": "Envelope under your door. Inside: a crayon drawing of three stick figures in a trench coat, labeled 'US'. Nothing else.",
+        "credibility": 0,
+        "swipeEffects": {
+            "right": {
+                "credibilityChange": 5,
+                "heatChange": 5,
+                "addsNode": "KIDS"
+            },
+            "left": {
+                "credibilityChange": 0,
+                "heatChange": 0
+            }
+        }
+    }
+]

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Rogue Reporter</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Special+Elite&family=Share+Tech+Mono&family=Lora&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: #1a1612;
+      /* Dark wood/desk base */
+      background-image: radial-gradient(#2a221a 1px, transparent 1px);
+      background-size: 20px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* [v2] iOS Safari fix: 100vh is cropped by address bar. Use -webkit-fill-available. */
+      height: -webkit-fill-available;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    #game-container {
+      width: 100vw;
+      height: 100vh;
+      max-width: 960px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #game-container canvas {
+      display: block;
+      box-shadow: 0 0 40px rgba(0, 0, 0, 0.8), 0 0 100px rgba(0, 0, 0, 0.4);
+      border: 1px solid #2a221a;
+      max-height: 100%;
+    }
+
+    /* FONT PRELOAD: Phaser renders text on Canvas. Google Fonts loaded via CSS may not
+       be available to the Canvas context when Phaser first renders, causing a flash of
+       wrong font or incorrect text sizing. This hidden div forces the browser to load
+       all four fonts before the game script runs. BootScene's preload delay handles the rest. */
+    #font-preload {
+      position: absolute;
+      visibility: hidden;
+      font-family: 'Playfair Display';
+      font-size: 4px;
+    }
+
+    #font-preload span:nth-child(2) {
+      font-family: 'Special Elite';
+    }
+
+    #font-preload span:nth-child(3) {
+      font-family: 'Share Tech Mono';
+    }
+
+    #font-preload span:nth-child(4) {
+      font-family: 'Lora';
+    }
+  </style>
+  <script type="module" crossorigin src="./assets/index-DLKKIhkv.js"></script>
+</head>
+
+<body>
+  <!-- Font preload trick: hidden text forces browser to download all fonts before game init -->
+  <div id="font-preload">
+    <span>Rogue Reporter</span>
+    <span>Rogue Reporter</span>
+    <span>Rogue Reporter</span>
+    <span>Rogue Reporter</span>
+  </div>
+  <div id="game-container"></div>
+</body>
+
+</html>

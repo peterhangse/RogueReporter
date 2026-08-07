@@ -1,0 +1,135 @@
+{
+    "conspiracyId": "trench_coat_kids",
+    "name": "Mayor Svensson is 3 Kids in a Trench Coat",
+    "boardNodes": [
+        "MAYOR",
+        "LATE_LIGHTS",
+        "MISSING_FUNDS",
+        "KIDS",
+        "CANDY",
+        "TRENCH_COAT",
+        "PIZZA_NIGHT",
+        "OLD_INVOICE",
+        "RIVAL_THEORY",
+        "FAKE_PHOTO"
+    ],
+    "validConnections": [
+        [
+            "MAYOR",
+            "LATE_LIGHTS"
+        ],
+        [
+            "CANDY",
+            "TRENCH_COAT"
+        ],
+        [
+            "MISSING_FUNDS",
+            "CANDY"
+        ],
+        [
+            "LATE_LIGHTS",
+            "KIDS"
+        ],
+        [
+            "TRENCH_COAT",
+            "KIDS"
+        ],
+        [
+            "MAYOR",
+            "TRENCH_COAT"
+        ],
+        [
+            "PIZZA_NIGHT",
+            "MAYOR"
+        ],
+        [
+            "PIZZA_NIGHT",
+            "LATE_LIGHTS"
+        ],
+        [
+            "MISSING_FUNDS",
+            "OLD_INVOICE"
+        ],
+        [
+            "RIVAL_THEORY",
+            "MAYOR"
+        ],
+        [
+            "FAKE_PHOTO",
+            "TRENCH_COAT"
+        ]
+    ],
+    "nodes": [
+        {
+            "id": "MAYOR",
+            "label": "MAYOR",
+            "x": 480,
+            "y": 100,
+            "type": "person",
+            "locked": true
+        },
+        {
+            "id": "LATE_LIGHTS",
+            "label": "LATE NIGHTS",
+            "x": 250,
+            "y": 65,
+            "type": "event"
+        },
+        {
+            "id": "MISSING_FUNDS",
+            "label": "$5M MISSING",
+            "x": 250,
+            "y": 140,
+            "type": "evidence"
+        },
+        {
+            "id": "KIDS",
+            "label": "KIDS TRUANT",
+            "x": 710,
+            "y": 65,
+            "type": "person"
+        },
+        {
+            "id": "CANDY",
+            "label": "CANDY ORDERS",
+            "x": 480,
+            "y": 190,
+            "type": "evidence"
+        },
+        {
+            "id": "TRENCH_COAT",
+            "label": "THE COAT",
+            "x": 710,
+            "y": 140,
+            "type": "evidence"
+        },
+        {
+            "id": "PIZZA_NIGHT",
+            "label": "3AM PIZZA",
+            "x": 480,
+            "y": 30,
+            "type": "event"
+        },
+        {
+            "id": "OLD_INVOICE",
+            "label": "OLD INVOICE",
+            "x": 130,
+            "y": 190,
+            "type": "evidence"
+        },
+        {
+            "id": "RIVAL_THEORY",
+            "label": "RIVAL THEORY",
+            "x": 710,
+            "y": 210,
+            "type": "motive"
+        },
+        {
+            "id": "FAKE_PHOTO",
+            "label": "FAKE PHOTO",
+            "x": 830,
+            "y": 100,
+            "type": "evidence"
+        }
+    ]
+}

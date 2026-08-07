@@ -1,0 +1,19 @@
+{
+  "hosting": {
+    "site": "roguereporter-game",
+    "public": "docs",
+    "ignore": [
+      "firebase.json",
+      ".firebaserc",
+      "node_modules/**",
+      "src/**",
+      "*.md"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

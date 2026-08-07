@@ -1,0 +1,102 @@
+{
+    "id": "trench_coat_kids",
+    "name": "The Mayor is Three Kids in a Trench Coat",
+    "beatCards": [
+        {
+            "triggerAfter": "doc_candy_invoice",
+            "id": "beat_candy_sugar",
+            "type": "event",
+            "title": "EDITOR'S NOTE",
+            "text": "Are you seriously investigating candy? The mayor is negotiating a sister-city deal with Kyoto. Drop the sugar trail or you're fired.",
+            "credibility": 0,
+            "nodeType": "event",
+            "swipeEffects": {
+                "right": {
+                    "credibilityChange": -10,
+                    "heatChange": 10
+                },
+                "left": {
+                    "credibilityChange": 5,
+                    "heatChange": -5
+                }
+            }
+        },
+        {
+            "triggerAfter": "wit_janitor_02",
+            "id": "beat_janitor_fired",
+            "type": "event",
+            "title": "KARL IS GONE",
+            "text": "Karl the janitor was let go this morning. 'Irreconcilable differences regarding floor wax.' They're cleaning house.",
+            "credibility": 0,
+            "nodeType": "event",
+            "swipeEffects": {
+                "right": {
+                    "credibilityChange": 0,
+                    "heatChange": 10
+                },
+                "left": {
+                    "credibilityChange": -5,
+                    "heatChange": -5
+                }
+            }
+        },
+        {
+            "triggerAfter": "photo_coat_01",
+            "id": "beat_police_warning",
+            "type": "event",
+            "title": "A FRIENDLY CHAT",
+            "text": "An unmarked car has been idling outside your flat for two hours. They know you have the Lobby CCTV tape.",
+            "credibility": 0,
+            "nodeType": "event",
+            "swipeEffects": {
+                "right": {
+                    "credibilityChange": 5,
+                    "heatChange": 15
+                },
+                "left": {
+                    "credibilityChange": -10,
+                    "heatChange": -10
+                }
+            }
+        },
+        {
+            "triggerAfter": "doc_height_record",
+            "id": "beat_height_dmv",
+            "type": "event",
+            "title": "DMV HACKED",
+            "text": "City employee portal was breached. Every record altered. The Mayor's listed height is now 'Sufficiently Tall'.",
+            "credibility": 0,
+            "nodeType": "event",
+            "swipeEffects": {
+                "right": {
+                    "credibilityChange": 10,
+                    "heatChange": 15
+                },
+                "left": {
+                    "credibilityChange": 0,
+                    "heatChange": 0
+                }
+            }
+        },
+        {
+            "triggerAfter": "doc_zoning_approval",
+            "id": "beat_the_climax",
+            "type": "event",
+            "title": "A LATE NIGHT CALL",
+            "text": "'Stop looking at the zoning permits. We will give you an exclusive interview on the Kyoto deal. Walk away.'",
+            "credibility": 0,
+            "nodeType": "event",
+            "swipeEffects": {
+                "right": {
+                    "credibilityChange": 15,
+                    "heatChange": 20
+                },
+                "left": {
+                    "credibilityChange": -20,
+                    "heatChange": -20,
+                    "moneyChange": 300
+                }
+            }
+        }
+    ]
+}

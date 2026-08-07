@@ -1,0 +1,63 @@
+[
+  {
+    "id": "tutorial_01",
+    "type": "witness",
+    "title": "Karl the Janitor",
+    "text": "I saw lights in the mayor's office at 3 AM. Every. Single. Night.",
+    "credibility": 6,
+    "npcId": "karl_janitor",
+    "nodeType": "event",
+    "tutorial": { "forcedDirection": "right", "hintText": "This witness seems reliable. → INVESTIGATE to add evidence to your board.", "lockOtherDirections": true },
+    "swipeEffects": {
+      "right": { "credibilityChange": 0,   "heatChange": 5,  "addsNode": "LATE_LIGHTS" },
+      "left":  { "credibilityChange": 0,   "heatChange": 0 },
+      "up":    { "credibilityChange": -10, "heatChange": 0 },
+      "down":  { "credibilityChange": -5,  "heatChange": -4 }
+    }
+  },
+  {
+    "id": "tutorial_02",
+    "type": "photo",
+    "title": "Blurry City Hall Photo",
+    "text": "Someone emailed this in. Lights at 3:17 AM. Very blurry. Very suspicious.",
+    "credibility": 3,
+    "nodeType": "event",
+    "tutorial": { "forcedDirection": "left", "hintText": "A blurry anonymous photo? Doesn't pass the smell test. ← IGNORE it.", "lockOtherDirections": true },
+    "swipeEffects": {
+      "right": { "credibilityChange": 0,   "heatChange": 4,  "addsNode": "LATE_LIGHTS" },
+      "left":  { "credibilityChange": 0,   "heatChange": 0 },
+      "up":    { "credibilityChange": -10, "heatChange": 0 },
+      "down":  { "credibilityChange": -2,  "heatChange": -1 }
+    }
+  },
+  {
+    "id": "tutorial_03",
+    "type": "document",
+    "title": "Pizza Delivery Receipt",
+    "text": "Delivered to City Hall at 3:45 AM. Three large pepperoni pizzas. Who eats that much at 3 AM?",
+    "credibility": 7,
+    "nodeType": "evidence",
+    "tutorial": { "forcedDirection": "up", "hintText": "Sometimes you need a story fast. ↑ FAKE is quick but wrecks your credibility.", "lockOtherDirections": true },
+    "swipeEffects": {
+      "right": { "credibilityChange": 4,   "heatChange": 8,  "addsNode": "PIZZA_NIGHT" },
+      "left":  { "credibilityChange": 0,   "heatChange": 0 },
+      "up":    { "credibilityChange": -5, "heatChange": 0, "addsNode": "PIZZA_NIGHT" },
+      "down":  { "credibilityChange": -5,  "heatChange": -3 }
+    }
+  },
+  {
+    "id": "tutorial_04",
+    "type": "event",
+    "title": "Rival Paper Scoop",
+    "text": "The Daily Chronicle just published a puff piece on the Mayor's new golf swing. We need cash to keep the lights on.",
+    "credibility": 10,
+    "nodeType": "event",
+    "tutorial": { "forcedDirection": "down", "hintText": "Too much heat? ↓ LEAK tips off a rival paper — cools the heat, costs credibility.", "lockOtherDirections": true },
+    "swipeEffects": {
+      "right": { "credibilityChange": 5,   "heatChange": 15 },
+      "left":  { "credibilityChange": 0,   "heatChange": 0 },
+      "up":    { "credibilityChange": -10, "heatChange": 0 },
+      "down":  { "credibilityChange": -3, "heatChange": -12 }
+    }
+  }
+]
